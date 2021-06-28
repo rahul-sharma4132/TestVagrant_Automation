@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Elements>
+<Element name = "TopMenuExpandButton">
+<xpath>//a[@id='h_sub_menu']</xpath>
+</Element>
+<Element name = "NotNowPopUp">
+<xpath>//a[@class='notnow']</xpath>
+</Element>
+<Element name = "WeatherLink">
+<xpath>//a[text()='WEATHER']</xpath>
+</Element>
+<Element name = "TemperatureofCity">
+<xpath>//div[@title='#']/div/span[@class='tempRedText']</xpath>
+</Element>
+<Element name = "CitySearch">
+<xpath>//input[@class='searchBox']</xpath>
+</Element>
+<Element name = "CitySelect">
+<xpath>//input[@id="#"]</xpath>
+</Element>
+</Elements>
