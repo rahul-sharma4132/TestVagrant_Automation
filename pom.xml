@@ -16,7 +16,7 @@
 						<!-- Suite testng xml file to consider for test execution -->
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
-							<skipTests>false</skipTests>
+							<!-- <skipTests>false</skipTests> -->
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
