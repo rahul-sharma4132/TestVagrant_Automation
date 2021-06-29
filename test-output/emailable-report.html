@@ -9,27 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">com.testvagrant.WeatherCheck</th></tr>
-<tr><td><a href="#t0">CheckWeather</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">25</td><td></td><td></td></tr>
+<tr><td><a href="#t0">CheckWeather</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">94,734</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.testvagrant.WeatherCheck</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CheckWeather &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.testVagrant.Test.VerifyNDTVHomePage</td><td><a href="#m0">driversetup</a></td><td rowspan="1">1624955270689</td><td rowspan="1">881</td></tr><tr><th colspan="4">CheckWeather &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.testVagrant.Test.VerifyNDTVHomePage</td><td><a href="#m1">setup</a></td><td rowspan="1">1624955271586</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">tearDown</a></td><td rowspan="1">1624955271629</td><td rowspan="1">0</td></tr><tr><th colspan="4">CheckWeather &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.testVagrant.Test.TestTemperatureComparison</td><td><a href="#m3">verifyWeatherComparison</a></td><td rowspan="1">1624955271613</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.testVagrant.Test.VerifyNDTVHomePage</td><td><a href="#m4">checkNDTVHomePage</a></td><td rowspan="1">1624955271606</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">com.testVagrant.Test.VerifyWeatherPageNavigation</td><td><a href="#m5">verifyWeatherPage</a></td><td rowspan="1">1624955271610</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.testvagrant.WeatherCheck</th></tr></tbody><tbody id="t0"><tr><th colspan="4">CheckWeather &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testVagrant.Test.NDTVHomePageTest</td><td><a href="#m0">checkNDTVHomePage</a></td><td rowspan="1">1624988151714</td><td rowspan="1">823</td></tr><tr><th colspan="4">CheckWeather &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.testVagrant.Test.APISuccessTest</td><td><a href="#m1">verifyAPIStatus</a></td><td rowspan="1">1624988073316</td><td rowspan="1">1675</td></tr><tr class="passedodd"><td rowspan="2">com.testVagrant.Test.TestTemperatureComparison</td><td><a href="#m2">verifyWeatherComparison</a></td><td rowspan="1">1624988074995</td><td rowspan="1">10331</td></tr><tr class="passedodd"><td><a href="#m3">verifyWeatherComparisonWithVariance</a></td><td rowspan="1">1624988085327</td><td rowspan="1">66383</td></tr><tr class="passedeven"><td rowspan="1">com.testVagrant.Test.VerifyWeatherPageNavigation</td><td><a href="#m4">verifyWeatherPage</a></td><td rowspan="1">1624988152540</td><td rowspan="1">4518</td></tr></tbody>
 </table>
-<h2>CheckWeather</h2><h3 id="m0">com.testVagrant.Test.VerifyNDTVHomePage#driversetup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;com.testvagrant.drivers.DriverManager.driver&quot; is null
-	at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-	at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testVagrant.Test.VerifyNDTVHomePage#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.testVagrant.Test.VerifyNDTVHomePage#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.testVagrant.Test.TestTemperatureComparison#verifyWeatherComparison</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;com.testvagrant.drivers.DriverManager.driver&quot; is null
-	at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-	at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.testVagrant.Test.VerifyNDTVHomePage#checkNDTVHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;com.testvagrant.drivers.DriverManager.driver&quot; is null
-	at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-	at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.testVagrant.Test.VerifyWeatherPageNavigation#verifyWeatherPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;com.testvagrant.drivers.DriverManager.driver&quot; is null
-	at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-	at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CheckWeather</h2><h3 id="m0">com.testVagrant.Test.NDTVHomePageTest#checkNDTVHomePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.testVagrant.Test.NDTVHomePageTest.checkNDTVHomePage(NDTVHomePageTest.java:14)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testVagrant.Test.APISuccessTest#verifyAPIStatus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testVagrant.Test.TestTemperatureComparison#verifyWeatherComparison</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>city1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testVagrant.Test.TestTemperatureComparison#verifyWeatherComparisonWithVariance</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>city2</td><td>2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testVagrant.Test.VerifyWeatherPageNavigation#verifyWeatherPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

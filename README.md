@@ -9,3 +9,4 @@ This project contains the following salient components :-
 # Iterations
 iteration 1 :- Running tests sequentially to implement "DRY" at test level - Jun 28 23:53
 iteration 2 :- Fixing surefire skip result issue which was causing build failure -  Jun 29 11:33
+iteration 3 :- adding additional test cases with parallel execution and test case description -  Jun 29 23:28

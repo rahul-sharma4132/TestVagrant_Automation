@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name = "com.testvagrant.WeatherCheck">
+<suite name = "com.testvagrant.WeatherCheck"  configfailurepolicy="continue" parallel="methods" thread-count="4">
 <test name = "CheckWeather">
 <parameter name = "city" value = "city1" />
+<parameter name = "variance" value = "2" />
+<parameter name = "citySelected" value = "city2" />
 <packages>
 <package name="com.testVagrant.Test" />
 </packages>

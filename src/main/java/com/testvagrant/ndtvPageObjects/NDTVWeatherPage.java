@@ -31,19 +31,25 @@ public class NDTVWeatherPage {
 		return status;
 	}
 
-	public void searchForSpecificCity(String city) {
-
-		ndtvElementManipulator.writeIntoElement("CitySearch", city);
-		ndtvElementManipulator.searchelement("CitySelect", city);
+	public static void searchForSpecificCity(String city) {
+		String cityName = PropertyFileReader.getPropValue("NDTVWebsiteReader.properties", city);
+		ndtvElementManipulator.writeIntoElement("CitySearch", cityName);
+		ndtvElementManipulator.clickElement("CitySelect", cityName);
 
 	}
-
+	
+	public static String getTemperatureforSelectedCity(String city) {
+		searchForSpecificCity(city);
+		String temperature = getTemperatureforCity(city);
+		return temperature;
+	}
+	
 	public static String getTemperatureforCity(String city) {
 
 		String tempText = null;
 		try {
 			String cityName = PropertyFileReader.getPropValue("NDTVWebsiteReader.properties", city);
-			if (ndtvElementManipulator.searchelement("CitySelect", cityName) != null) {
+			if (ndtvElementManipulator.searchelement("CityDisplayed", cityName) != null) {
 				tempText = ndtvElementManipulator.searchelement("TemperatureofCity", cityName).getText();
 				tempText = tempText.substring(0, 2);
 			}
