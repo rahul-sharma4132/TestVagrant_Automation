@@ -1,5 +1,6 @@
 package com.testVagrant.Test;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Parameters;
@@ -14,7 +15,7 @@ public class TestTemperatureComparison extends BaseTest {
 	public static void verifyWeatherComparison(String city) {
 		String temperatureFromNDTV = ndtvWeatherPage.getTemperatureforCity(city);
 		String temperatureFromAPI = openWeatherAPIReader.getCityTemperatureResponseString();
-		assertTrue(TemperatureComaprator.compareStrings(temperatureFromNDTV, temperatureFromAPI));
+		assertFalse(TemperatureComaprator.compareStrings(temperatureFromNDTV, temperatureFromAPI));
 	}
 	
 }
