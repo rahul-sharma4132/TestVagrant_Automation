@@ -9,6 +9,9 @@
 <Element name = "WeatherLink">
 <xpath>//a[text()='WEATHER']</xpath>
 </Element>
+<Element name = "CityDisplayed">
+<xpath>//div[text()="#"]</xpath>
+</Element>
 <Element name = "TemperatureofCity">
 <xpath>//div[@title='#']/div/span[@class='tempRedText']</xpath>
 </Element>

@@ -25,8 +25,11 @@ public class BaseTest {
 	public static NDTVHomePage ndtvHomePage;
 	public static NDTVWeatherPage ndtvWeatherPage;
 	public static OpenWeatherAPIReader openWeatherAPIReader;
+	public static String apiName;
+	public static String appID;
+	public static String city;
 	
-	@BeforeSuite
+	@BeforeTest
 	public WebDriver driversetup() throws Exception {
 		String browser = PropertyFileReader.getPropValue("config.properties", "browser");
 		String applicationName = PropertyFileReader.getPropValue("config.properties", "applicationName");
@@ -48,10 +51,12 @@ public class BaseTest {
 	@BeforeSuite
 	public void setup() {
 		String apiName = PropertyFileReader.getPropValue("config.properties", "APIName");
+		appID = PropertyFileReader.getPropValue("openWeatherReader.properties", "appid");
+		city = PropertyFileReader.getPropValue("openWeatherReader.properties", "city");
 		openWeatherAPIReader = new OpenWeatherAPIReader(apiName);
 	}
 	
-	@AfterSuite
+	@AfterTest
 	public void tearDown() {
 		drivermanager.quitDriver();
 	}

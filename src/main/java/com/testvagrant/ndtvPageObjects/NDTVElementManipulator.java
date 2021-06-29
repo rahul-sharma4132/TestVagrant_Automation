@@ -46,6 +46,7 @@ public class NDTVElementManipulator implements ElementFeeders, ElementLocator {
 		WebElement element = null;
 		String xpath = null;
 		try {
+			driver.getTitle();
 			xpath = getXpath(elementLocator, replacementValue);
 			Thread.sleep(500);
 			driver.manage().timeouts().implicitlyWait(250, TimeUnit.MILLISECONDS);

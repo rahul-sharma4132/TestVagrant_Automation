@@ -37,11 +37,15 @@ public class OpenWeatherAPIReader {
 		return status;
 	}
 
-	public String getCityTemperatureResponseString() {
+	public String getCityTemperatureResponseString(String cityType) {
 		String temperature = null;
 		try {
 			if(APIName.equals("OpenWeather")) {
-				String cityName = PropertyFileReader.getPropValue("openWeatherReader.properties", "city");
+				String cityName=null;
+				if(cityType.equals("city1"))
+					cityName = PropertyFileReader.getPropValue("openWeatherReader.properties", "city");
+				if(cityType.equals("city2"))
+					cityName = PropertyFileReader.getPropValue("openWeatherReader.properties", "newCity");
 				String appID = PropertyFileReader.getPropValue("openWeatherReader.properties", "appid");
 				Response response = getCityTempResponse(cityName,appID);
 				boolean hitSuccess = getResponseStatusCode(response);

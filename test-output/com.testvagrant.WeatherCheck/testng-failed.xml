@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [com.testvagrant.WeatherCheck]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="CheckWeather(failed)">
+<suite configfailurepolicy="continue" thread-count="1" parallel="methods" name="Failed suite [com.testvagrant.WeatherCheck]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="methods" name="CheckWeather(failed)">
     <parameter name="city" value="city1"/>
+    <parameter name="variance" value="2"/>
+    <parameter name="citySelected" value="city2"/>
     <classes>
-      <class name="com.testVagrant.Test.VerifyWeatherPageNavigation">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyWeatherPage"/>
-          <include name="driversetup"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.testVagrant.Test.VerifyWeatherPageNavigation -->
-      <class name="com.testVagrant.Test.TestTemperatureComparison">
-        <methods>
-          <include name="verifyWeatherComparison"/>
-          <include name="tearDown"/>
-          <include name="driversetup"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.testVagrant.Test.TestTemperatureComparison -->
-      <class name="com.testVagrant.Test.VerifyNDTVHomePage">
+      <class name="com.testVagrant.Test.NDTVHomePageTest">
         <methods>
           <include name="checkNDTVHomePage"/>
           <include name="tearDown"/>
           <include name="driversetup"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.testVagrant.Test.VerifyNDTVHomePage -->
+      </class> <!-- com.testVagrant.Test.NDTVHomePageTest -->
     </classes>
   </test> <!-- CheckWeather(failed) -->
 </suite> <!-- Failed suite [com.testvagrant.WeatherCheck] -->

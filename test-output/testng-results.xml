@@ -1,165 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="12" passed="0" failed="0" skipped="3">
+<testng-results ignored="12" total="17" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-29T08:27:51Z" name="com.testvagrant.WeatherCheck" finished-at="2021-06-29T08:27:51Z" duration-ms="25">
+  <suite started-at="2021-06-29T17:34:22Z" name="com.testvagrant.WeatherCheck" finished-at="2021-06-29T17:35:57Z" duration-ms="94734">
     <groups>
     </groups>
-    <test started-at="2021-06-29T08:27:51Z" name="CheckWeather" finished-at="2021-06-29T08:27:51Z" duration-ms="25">
+    <test started-at="2021-06-29T17:34:22Z" name="CheckWeather" finished-at="2021-06-29T17:35:57Z" duration-ms="94734">
+      <class name="com.testVagrant.Test.APISuccessTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testVagrant.Test.APISuccessTest@62230c58]" started-at="2021-06-29T17:34:22Z" name="setup" finished-at="2021-06-29T17:34:22Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="driversetup()[pri:0, instance:com.testVagrant.Test.APISuccessTest@62230c58]" started-at="2021-06-29T17:34:22Z" name="driversetup" finished-at="2021-06-29T17:34:33Z" duration-ms="10855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driversetup -->
+        <test-method signature="verifyAPIStatus()[pri:0, instance:com.testVagrant.Test.APISuccessTest@62230c58]" started-at="2021-06-29T17:34:33Z" name="verifyAPIStatus" finished-at="2021-06-29T17:34:34Z" duration-ms="1675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAPIStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testVagrant.Test.APISuccessTest@62230c58]" started-at="2021-06-29T17:35:57Z" name="tearDown" finished-at="2021-06-29T17:35:57Z" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testVagrant.Test.APISuccessTest -->
       <class name="com.testVagrant.Test.VerifyWeatherPageNavigation">
-        <test-method signature="verifyWeatherPage()[pri:2, instance:com.testVagrant.Test.VerifyWeatherPageNavigation@55536d9e]" started-at="2021-06-29T08:27:51Z" name="verifyWeatherPage" finished-at="2021-06-29T08:27:51Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null
-at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="verifyWeatherPage()[pri:0, instance:com.testVagrant.Test.VerifyWeatherPageNavigation@74455848]" started-at="2021-06-29T17:35:52Z" name="verifyWeatherPage" finished-at="2021-06-29T17:35:57Z" duration-ms="4518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWeatherPage -->
       </class> <!-- com.testVagrant.Test.VerifyWeatherPageNavigation -->
       <class name="com.testVagrant.Test.TestTemperatureComparison">
-        <test-method signature="verifyWeatherComparison(java.lang.String)[pri:3, instance:com.testVagrant.Test.TestTemperatureComparison@346d61be]" started-at="2021-06-29T08:27:51Z" name="verifyWeatherComparison" finished-at="2021-06-29T08:27:51Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null
-at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="verifyWeatherComparison(java.lang.String)[pri:0, instance:com.testVagrant.Test.TestTemperatureComparison@2cd2a21f]" started-at="2021-06-29T17:34:34Z" name="verifyWeatherComparison" finished-at="2021-06-29T17:34:45Z" duration-ms="10331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[city1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWeatherComparison -->
+        <test-method signature="verifyWeatherComparisonWithVariance(java.lang.String, java.lang.String)[pri:0, instance:com.testVagrant.Test.TestTemperatureComparison@2cd2a21f]" started-at="2021-06-29T17:34:45Z" name="verifyWeatherComparisonWithVariance" finished-at="2021-06-29T17:35:51Z" duration-ms="66383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[city2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWeatherComparisonWithVariance -->
       </class> <!-- com.testVagrant.Test.TestTemperatureComparison -->
-      <class name="com.testVagrant.Test.VerifyNDTVHomePage">
-        <test-method is-config="true" signature="driversetup()[pri:0, instance:com.testVagrant.Test.VerifyNDTVHomePage@3e6ef8ad]" started-at="2021-06-29T08:27:50Z" name="driversetup" finished-at="2021-06-29T08:27:51Z" duration-ms="881" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+      <class name="com.testVagrant.Test.NDTVHomePageTest">
+        <test-method signature="checkNDTVHomePage()[pri:0, instance:com.testVagrant.Test.NDTVHomePageTest@2e55dd0c]" started-at="2021-06-29T17:35:51Z" name="checkNDTVHomePage" finished-at="2021-06-29T17:35:52Z" duration-ms="823" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null
-at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.testVagrant.Test.NDTVHomePageTest.checkNDTVHomePage(NDTVHomePageTest.java:14)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driversetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testVagrant.Test.VerifyNDTVHomePage@3e6ef8ad]" started-at="2021-06-29T08:27:51Z" name="setup" finished-at="2021-06-29T08:27:51Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="checkNDTVHomePage()[pri:1, instance:com.testVagrant.Test.VerifyNDTVHomePage@3e6ef8ad]" started-at="2021-06-29T08:27:51Z" name="checkNDTVHomePage" finished-at="2021-06-29T08:27:51Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "com.testvagrant.drivers.DriverManager.driver" is null
-at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
-at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkNDTVHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testVagrant.Test.VerifyNDTVHomePage@3e6ef8ad]" started-at="2021-06-29T08:27:51Z" name="tearDown" finished-at="2021-06-29T08:27:51Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.testVagrant.Test.VerifyNDTVHomePage -->
+      </class> <!-- com.testVagrant.Test.NDTVHomePageTest -->
     </test> <!-- CheckWeather -->
   </suite> <!-- com.testvagrant.WeatherCheck -->
 </testng-results>
