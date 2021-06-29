@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" class="navigator-link">
-              <span class="suite-name border-failed">com.testvagrant.WeatherCheck</span>
+              <span class="suite-name border-skipped">com.testvagrant.WeatherCheck</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,40 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" class="hide-methods failed suite-com.testvagrant.WeatherCheck"> (hide)</a> <!-- hide-methods failed suite-com.testvagrant.WeatherCheck -->
-                      <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" class="show-methods failed suite-com.testvagrant.WeatherCheck"> (show)</a> <!-- show-methods failed suite-com.testvagrant.WeatherCheck -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" class="hide-methods skipped suite-com.testvagrant.WeatherCheck"> (hide)</a> <!-- hide-methods skipped suite-com.testvagrant.WeatherCheck -->
+                      <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" class="show-methods skipped suite-com.testvagrant.WeatherCheck"> (show)</a> <!-- show-methods skipped suite-com.testvagrant.WeatherCheck -->
                     </span>
-                    <div class="method-list-content failed suite-com.testvagrant.WeatherCheck">
+                    <div class="method-list-content skipped suite-com.testvagrant.WeatherCheck">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" title="com.testVagrant.Test.TestTemperatureComparison" class="method navigator-link" hash-for-method="verifyWeatherComparison(city1)">verifyWeatherComparison(city1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-com.testvagrant.WeatherCheck -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" class="hide-methods passed suite-com.testvagrant.WeatherCheck"> (hide)</a> <!-- hide-methods passed suite-com.testvagrant.WeatherCheck -->
-                      <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" class="show-methods passed suite-com.testvagrant.WeatherCheck"> (show)</a> <!-- show-methods passed suite-com.testvagrant.WeatherCheck -->
-                    </span>
-                    <div class="method-list-content passed suite-com.testvagrant.WeatherCheck">
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" title="com.testVagrant.Test.VerifyNDTVHomePage" class="method navigator-link" hash-for-method="checkNDTVHomePage">checkNDTVHomePage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" title="com.testVagrant.Test.TestTemperatureComparison" class="method navigator-link" hash-for-method="verifyWeatherComparison">verifyWeatherComparison</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-com.testvagrant.WeatherCheck" title="com.testVagrant.Test.VerifyWeatherPageNavigation" class="method navigator-link" hash-for-method="verifyWeatherPage">verifyWeatherPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-com.testvagrant.WeatherCheck -->
+                    </div> <!-- method-list-content skipped suite-com.testvagrant.WeatherCheck -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -136,29 +127,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.testvagrant.WeatherCheck" class="panel com.testvagrant.WeatherCheck">
-          <div class="suite-com.testvagrant.WeatherCheck-class-failed">
+          <div class="suite-com.testvagrant.WeatherCheck-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.testVagrant.Test.TestTemperatureComparison</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyWeatherComparison(city1)">
-                  </a> <!-- verifyWeatherComparison(city1) -->
-                  <span class="method-name">verifyWeatherComparison</span>
-                  <span class="parameters">(city1)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.testVagrant.Test.TestTemperatureComparison.verifyWeatherComparison(TestTemperatureComparison.java:17)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com.testvagrant.WeatherCheck-class-failed -->
-          <div class="suite-com.testvagrant.WeatherCheck-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.testVagrant.Test.VerifyWeatherPageNavigation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -167,13 +138,38 @@
                   <a name="verifyWeatherPage">
                   </a> <!-- verifyWeatherPage -->
                   <span class="method-name">verifyWeatherPage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;com.testvagrant.drivers.DriverManager.driver&quot; is null
+	at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
+	at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com.testvagrant.WeatherCheck-class-passed -->
-          <div class="suite-com.testvagrant.WeatherCheck-class-passed">
+          </div> <!-- suite-com.testvagrant.WeatherCheck-class-skipped -->
+          <div class="suite-com.testvagrant.WeatherCheck-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
+              <span class="class-name">com.testVagrant.Test.TestTemperatureComparison</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWeatherComparison">
+                  </a> <!-- verifyWeatherComparison -->
+                  <span class="method-name">verifyWeatherComparison</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;com.testvagrant.drivers.DriverManager.driver&quot; is null
+	at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
+	at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.testvagrant.WeatherCheck-class-skipped -->
+          <div class="suite-com.testvagrant.WeatherCheck-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.testVagrant.Test.VerifyNDTVHomePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -182,14 +178,19 @@
                   <a name="checkNDTVHomePage">
                   </a> <!-- checkNDTVHomePage -->
                   <span class="method-name">checkNDTVHomePage</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;com.testvagrant.drivers.DriverManager.driver&quot; is null
+	at com.testvagrant.drivers.DriverManager.getWebDriver(DriverManager.java:28)
+	at com.testVagrant.Test.BaseTest.driversetup(BaseTest.java:36)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com.testvagrant.WeatherCheck-class-passed -->
+          </div> <!-- suite-com.testvagrant.WeatherCheck-class-skipped -->
         </div> <!-- panel com.testvagrant.WeatherCheck -->
         <div panel-name="test-xml-com.testvagrant.WeatherCheck" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/rahul/eclipse-workspace/NDTVAutomation/testng.xml</span>
+            <span class="header-content">/home/rahul/eclipse-workspace/TestVagrant_Automation/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -249,20 +250,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyWeatherComparison')
 data.setCell(0, 2, 'com.testVagrant.Test.TestTemperatureComparison')
-data.setCell(0, 3, 72229);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyWeatherPage')
 data.setCell(1, 2, 'com.testVagrant.Test.VerifyWeatherPageNavigation')
-data.setCell(1, 3, 7375);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'checkNDTVHomePage')
 data.setCell(2, 2, 'com.testVagrant.Test.VerifyNDTVHomePage')
-data.setCell(2, 3, 12);
+data.setCell(2, 3, 0);
 window.suiteTableData['com.testvagrant.WeatherCheck']= { tableData: data, tableDiv: 'times-div-com.testvagrant.WeatherCheck'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-com.testvagrant.WeatherCheck">
               </div> <!-- times-div-com.testvagrant.WeatherCheck -->
             </div> <!-- times-div -->
@@ -281,7 +282,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.testVagrant.Test.BaseTest</span>
+              <span class="ignored-class-name">com.testVagrant.Test.VerifyWeatherPageNavigation</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -292,7 +293,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.testVagrant.Test.VerifyWeatherPageNavigation</span>
+              <span class="ignored-class-name">com.testVagrant.Test.BaseTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -322,41 +323,33 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.testVagrant.Test.VerifyNDTVHomePage</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">driversetup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-suite before">
-                <span class="method-name">setup</span>
-                <span class="method-start">12083 ms</span>
-              </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">checkNDTVHomePage</span>
-                <span class="method-start">12102 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testVagrant.Test.VerifyWeatherPageNavigation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyWeatherPage</span>
-                <span class="method-start">12116 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testVagrant.Test.TestTemperatureComparison</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyWeatherComparison(city1)</span>
-                <span class="method-start">19500 ms</span>
+                <span class="method-name">verifyWeatherComparison</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testVagrant.Test.VerifyNDTVHomePage</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">91767 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="configuration-suite before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">driversetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

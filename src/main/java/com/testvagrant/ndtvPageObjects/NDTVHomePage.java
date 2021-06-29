@@ -16,8 +16,16 @@ public class NDTVHomePage {
 		ndtvElementManipulator = new NDTVElementManipulator(driver,"CommonItems.xml");
 	}
 	
+	public static void handleAllowPopUp() {
+		
+		if(ndtvElementManipulator.searchelement("NotNowPopUp")!=null) {
+			ndtvElementManipulator.searchelement("NotNowPopUp").click();
+		}
+	}
+	
 	public boolean checkHomePage() {
 		boolean status = false;
+		handleAllowPopUp();
 		String actualURL = driver.getCurrentUrl();
 		String expectedURL = PropertyFileReader.getPropValue("NDTVWebsiteReader.properties", "url");
 		if(expectedURL.equals(actualURL))

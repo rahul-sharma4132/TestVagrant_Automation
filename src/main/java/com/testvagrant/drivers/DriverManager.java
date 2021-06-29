@@ -11,7 +11,7 @@ public abstract class DriverManager {
 	protected static WebDriver driver;
 	private static String path;
 
-	protected abstract void createWebDriver() throws Exception;
+	protected abstract WebDriver createWebDriver() throws Exception;
 
 	public void quitDriver() {
 		if (null != driver) {
@@ -22,7 +22,7 @@ public abstract class DriverManager {
 
 	public WebDriver getWebDriver(String ApplicationName) throws Exception {
 		if (null == driver) {
-			createWebDriver();
+			driver = createWebDriver();
 			if (ApplicationName.contains("NDTV")) {
 				String url = PropertyFileReader.getPropValue("NDTVWebsiteReader.properties", "url");
 				driver.get(url);
