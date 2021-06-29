@@ -19,7 +19,7 @@ public class ChromeDriverManager extends DriverManager {
 		WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.chrome.verboseLogging", "true");
 		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+		options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();	
 		return driver;
